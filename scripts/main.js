@@ -18,11 +18,11 @@ console.log(vari1);
 console.log(vari2);
 console.log(dsa);
 
-// if ( vari1 === x){
-//     console.log("true");
-// } else {
-//     console.log("false");
-// }
+if ( vari1 === x){
+    console.log("true");
+} else {
+    console.log("false");
+}
 
 // let ice = "chosc";
 // if (ice == "choc"){
@@ -31,10 +31,10 @@ console.log(dsa);
 //     alert("baw i love choc");
 // }
 
-// function multiply (num1,num2){
-//     let result = (num1 * num2);
-//     return result;
-// }
+function multiply (num1,num2){
+    let resultsss = (num1 * num2);
+    return resultsss;
+}
 
 // document.querySelector("html").addEventListener("click", () => {
 //     alert("arrow function created")
