@@ -76,19 +76,19 @@ function multiply (num1,num2){
 //     description : "DRDO, Ex-Microsoft, TedX Speaker",
 // };
 
-// let ww = 5;
-// let ew = 5;
-// console.log("a+b=", ww + ew);
+let ww = 5;
+let ew = 5;
+console.log("a+b=", ww + ew);
 
-// let agess = 25;
-// if (agess > 18) {
-//     console.log("yes you can vote");
-// } else {
-//     console.log("you can't vote ");
-// }
-// let uncle = 8;
+let agess = 25;
+if (agess > 18) {
+    console.log("yes you can vote");
+} else {
+    console.log("you can't vote ");
+}
+let aunty = 8;
 
-// console.log(uncle > 55 ? "budha" : "javan");
+console.log(aunty > 55 ? "budha" : "javan");
 
 // const fruit = "oranges";
 // switch(fruit) {
