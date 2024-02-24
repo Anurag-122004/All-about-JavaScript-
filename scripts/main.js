@@ -9,14 +9,14 @@
 // let mycar = "bob";
 // mycar = "tom";
 // console.log(mycar);
-// let vari = true;
-// let vari1 = 5;
-// let vari2 = "hello";
-// let dsa = [1,"bob",2,"secc"];
-// console.log(vari);
-// console.log(vari1);
-// console.log(vari2);
-// console.log(dsa);
+let vari5 = true;
+let vari1 = 5;
+let vari2 = "hello";
+let dsa = [1,"bob",2,"secc"];
+console.log(vari5);
+console.log(vari1);
+console.log(vari2);
+console.log(dsa);
 
 // if ( vari1 === x){
 //     console.log("true");
@@ -153,10 +153,10 @@
 // let str = `AnuragKaushik`;
 // console.log(str);
 
-// const purchase = {
-//     item : "pen",
-//     price : 10
-// }
+const purchase = {
+    item : "pen",
+    price : 10
+}
 // console.log(`The price of ${purchase.item} is ${purchase.price} Rs.`);
 // console.log("The Price of ", purchase.item ," is ", purchase.price, " Rs.");
 // let str = " Anurag Kaushik ";
