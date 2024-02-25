@@ -301,17 +301,22 @@
 //     return (sum += value) ;
 // });
 // console.log(newvalue);
-let userValue = prompt("Enter the limitng value");
-let array = [];
-for ( let i=1; i<=userValue; i++){
-    array.push(i);
-}
-let sumarray = array.reduce((sum, value) => {
-    return (sum += value);
-});
-console.log(`Sum = ${sumarray}`);
+// let userValue = prompt("Enter the limitng value");
+// let array = [];
+// for ( let i=1; i<=userValue; i++){
+//     array.push(i);
+// }
+// let sumarray = array.reduce((sum, value) => {
+//     return (sum += value);
+// });
+// console.log(`Sum = ${sumarray}`);
 
-let prodarray = array.reduce((product = 1 , value) =>{
-    return (product *= value);
-});
-console.log(` prodarray = ${prodarray}`);
+// let prodarray = array.reduce((product = 1 , value) =>{
+//     return (product *= value);
+// });
+// console.log(` prodarray = ${prodarray}`);
+// console.dir(document.getElementById("h11"));
+console.dir(document.getElementsByClassName("wer"));
+console.dir(document.getElementsByTagName("div"));
+console.dir(document.querySelector("#heading"));
+console.dir(document.querySelector(".wer"));
