@@ -226,15 +226,15 @@
 // }
 // let avgmarks = (sum/marks.length);
 // console.log(`Average Marks are ${avgmarks}`);
-let i;
-let newprice = [];
-let prices = [250, 645, 300, 900, 50];
-for (i in prices){
-    let offer = prices[i] / 10;
-    prices[i] = prices[i] - offer;
-    newprice.push(prices[i]);
-}
-console.log(`Final Price = ${newprice}`);
+// let i;
+// let newprice = [];
+// let prices = [250, 645, 300, 900, 50];
+// for (i in prices){
+//     let offer = prices[i] / 10;
+//     prices[i] = prices[i] - offer;
+//     newprice.push(prices[i]);
+// }
+// console.log(`Final Price = ${newprice}`);
 // console.log(newprice.pop());
 // console.log(newprice.pop());
 // console.log(newprice.pop());
@@ -242,7 +242,19 @@ console.log(`Final Price = ${newprice}`);
 // console.log(newprice.pop());
 // console.log(`Final Price = ${newprice}`);
 // console.log(newprice.toString());
-console.log(newprice.unshift(999));
-console.log(newprice);
-console.log(newprice.shift());
-console.log(newprice);
+// console.log(newprice.unshift(999));
+// console.log(newprice);
+// console.log(newprice.shift());
+// console.log(newprice);
+// console.log(newprice.slice(1,4));
+// console.log(newprice.splice(2,2,1000,2000));
+// console.log(newprice);
+
+let compinies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+console.log(compinies);
+console.log(compinies.shift());
+console.log(compinies);
+console.log(compinies.splice(1,1,"OLA"));
+console.log(compinies);
+console.log(compinies.push("Amazon"));
+console.log(compinies);
