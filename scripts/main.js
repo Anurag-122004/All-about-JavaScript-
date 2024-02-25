@@ -9,20 +9,20 @@
 // let mycar = "bob";
 // mycar = "tom";
 // console.log(mycar);
-let vari5 = true;
-let vari1 = 5;
-let vari2 = "hello";
-let dsa = [1,"bob",2,"secc"];
-console.log(vari5);
-console.log(vari1);
-console.log(vari2);
-console.log(dsa);
+// let vari5 = true;
+// let vari1 = 5;
+// let vari2 = "hello";
+// let dsa = [1,"bob",2,"secc"];
+// console.log(vari5);
+// console.log(vari1);
+// console.log(vari2);
+// console.log(dsa);
 
-if ( vari1 === x){
-    console.log("true");
-} else {
-    console.log("false");
-}
+// if ( vari1 === x){
+//     console.log("true");
+// } else {
+//     console.log("false");
+// }
 
 // let ice = "chosc";
 // if (ice == "choc"){
@@ -31,10 +31,10 @@ if ( vari1 === x){
 //     alert("baw i love choc");
 // }
 
-function multiply (num1,num2){
-    let resultsss = (num1 * num2);
-    return resultsss;
-}
+// function multiply (num1,num2){
+//     let resultsss = (num1 * num2);
+//     return resultsss;
+// }
 
 // document.querySelector("html").addEventListener("click", () => {
 //     alert("arrow function created")
@@ -76,19 +76,19 @@ function multiply (num1,num2){
 //     description : "DRDO, Ex-Microsoft, TedX Speaker",
 // };
 
-let ww = 5;
-let ew = 5;
-console.log("a+b=", ww + ew);
+// let ww = 5;
+// let ew = 5;
+// console.log("a+b=", ww + ew);
 
-let agess = 25;
-if (agess > 18) {
-    console.log("yes you can vote");
-} else {
-    console.log("you can't vote ");
-}
-let aunty = 8;
+// let agess = 25;
+// if (agess > 18) {
+//     console.log("yes you can vote");
+// } else {
+//     console.log("you can't vote ");
+// }
+// let aunty = 8;
 
-console.log(aunty > 55 ? "budha" : "javan");
+// console.log(aunty > 55 ? "budha" : "javan");
 
 // const fruit = "oranges";
 // switch(fruit) {
@@ -153,10 +153,10 @@ console.log(aunty > 55 ? "budha" : "javan");
 // let str = `AnuragKaushik`;
 // console.log(str);
 
-const purchase = {
-    item : "pen",
-    price : 10
-}
+// const purchase = {
+//     item : "pen",
+//     price : 10
+// }
 // console.log(`The price of ${purchase.item} is ${purchase.price} Rs.`);
 // console.log("The Price of ", purchase.item ," is ", purchase.price, " Rs.");
 // let str = " Anurag Kaushik ";
@@ -167,8 +167,82 @@ const purchase = {
 // console.log(str.slice(2,5));
 // console.log(str.replace("nur","run"));
 // console.log(str.charAt(5));
-let username = prompt("Enter your full name");
-console.log(username);
-let len = username.length;
-let result = "@"+username + len;
-console.log(result);
+// let username = prompt("Enter your full name");
+// console.log(username);
+// let len = username.length;
+// let result = "@"+username + len;
+// console.log(result);
+// function getMonthName(mo) {
+//     mo--; // Adjust month number for array index (so that 0 = Jan, 11 = Dec)
+//     const months = [
+//     "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+//     "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
+//     ];
+//     if (months[mo]) {
+//     return months[mo];
+//     } else {
+//     throw new Error("InvalidMonthNo"); // throw keyword is used here
+//     }
+// }
+
+// try {
+//     // statements to try
+//     monthName = getMonthName(myMonth); // function could throw exception
+// } catch (e) {
+//     monthName = "unknown";
+//     logMyErrors(e); // pass exception object to error handler (i.e. your own function)
+// }
+
+// function doSomethingErrorProne() {
+//     if (ourCodeMakesAMistake()) {
+//       throw new Error("The message");
+//     } else {
+//       doSomethingToGetAJavaScriptError();
+//     }
+//   }
+
+//   try {
+//     doSomethingErrorProne();
+//   } catch (e) {
+//     // Now, we actually use `console.error()`
+//     console.error(e.name); // 'Error'
+//     console.error(e.message); // 'The message', or a JavaScript error message
+//   }
+// try {
+//     // Code that may throw an error
+//     let result = someUndefinedVariable * 2;
+//     console.log(result); // This line won't be executed if an error occurs
+//     } catch (error) {
+//     // Catch and handle the error
+//     console.error("An error occurred:", error.message);
+//     } finally {
+//     // Code that will always be executed, regardless of whether an error occurred or not
+//     console.log("This is the 'finally' block.");
+//     }
+// let sum = 0;
+// let marks = [85,97,44,37,76,60];
+// for (let val of marks){
+//     sum += val;
+// }
+// let avgmarks = (sum/marks.length);
+// console.log(`Average Marks are ${avgmarks}`);
+let i;
+let newprice = [];
+let prices = [250, 645, 300, 900, 50];
+for (i in prices){
+    let offer = prices[i] / 10;
+    prices[i] = prices[i] - offer;
+    newprice.push(prices[i]);
+}
+console.log(`Final Price = ${newprice}`);
+// console.log(newprice.pop());
+// console.log(newprice.pop());
+// console.log(newprice.pop());
+// console.log(newprice.pop());
+// console.log(newprice.pop());
+// console.log(`Final Price = ${newprice}`);
+// console.log(newprice.toString());
+console.log(newprice.unshift(999));
+console.log(newprice);
+console.log(newprice.shift());
+console.log(newprice);
