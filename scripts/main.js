@@ -250,11 +250,68 @@
 // console.log(newprice.splice(2,2,1000,2000));
 // console.log(newprice);
 
-let compinies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
-console.log(compinies);
-console.log(compinies.shift());
-console.log(compinies);
-console.log(compinies.splice(1,1,"OLA"));
-console.log(compinies);
-console.log(compinies.push("Amazon"));
-console.log(compinies);
+// let compinies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+// console.log(compinies);
+// console.log(compinies.shift());
+// console.log(compinies);
+// console.log(compinies.splice(1,1,"OLA"));
+// console.log(compinies);
+// console.log(compinies.push("Amazon"));
+// console.log(compinies);
+
+// function myFunction() {
+//     console.log(`Anurag Kaushik`);
+// }
+
+// myFunction();
+// const mul = (a, b) => {
+//     return a * b;
+// }
+// console.log(mul(2,17));
+// let str = "Anurag";
+// console.log(str[5]);
+// let count = 0;
+// let vowels = (str) => {
+//     let newstr = str.toLowerCase();
+//     for ( let i in newstr){
+//         if (newstr[i] == "a" || newstr[i] == "e" || newstr[i] == "i" || newstr[i] == "o" || newstr[i] == "u"){
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+// let counts = vowels("wrtpp");
+// console.log(`Number of Vowels = ${counts}`);
+// let arrayy = [1,2,3,4,5,6];
+// arrayy.forEach((value, i) =>{
+//     console.log(value, i);
+// });
+// let array = [1,2,3,4,5];
+// let newArray = array.map((value) => {
+//     return value * value;
+// });
+// console.log(newArray);
+// let array = [1,2,3,4,5,6,7,8,9,10];
+// let newarray = array.filter((value) =>{
+//     return (value > 5);
+// });
+// console.log(newarray);
+// let array = [1,2,3,4,5];
+// let newvalue = array.reduce((sum, value) => {
+//     return (sum += value) ;
+// });
+// console.log(newvalue);
+let userValue = prompt("Enter the limitng value");
+let array = [];
+for ( let i=1; i<=userValue; i++){
+    array.push(i);
+}
+let sumarray = array.reduce((sum, value) => {
+    return (sum += value);
+});
+console.log(`Sum = ${sumarray}`);
+
+let prodarray = array.reduce((product = 1 , value) =>{
+    return (product *= value);
+});
+console.log(` prodarray = ${prodarray}`);
