@@ -324,5 +324,10 @@
 // let div = document.querySelector("div");
 // console.dir(div);
 // console.log(div.innerHTML);
-let heading = document.querySelector("h1");
-console.log(heading);
+// let heading = document.querySelector("h1");
+// console.log(heading);
+let appendH = " from apna College";
+let heading = document.querySelector("h2");
+let oldc = heading.innerText;
+let comHeading = oldc + appendH;
+console.log(comHeading);
