@@ -329,5 +329,5 @@
 let appendH = " from CU";
 let heading = document.querySelector("h2");
 let oldc = heading.innerText;
-let coHeading = oldc + appendH;
-console.log(coHeading);
+let cHeading = oldc + appendH;
+console.log(cHeading);
