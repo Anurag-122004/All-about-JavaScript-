@@ -321,5 +321,8 @@
 // console.dir(document.querySelector("#heading"));
 // console.dir(document.querySelector(".wer"));
 // console.dir(document.querySelector("div").children);
-let div = document.querySelector("div");
-console.dir(div);
+// let div = document.querySelector("div");
+// console.dir(div);
+// console.log(div.innerHTML);
+let heading = document.querySelector("h1");
+console.log(heading);
