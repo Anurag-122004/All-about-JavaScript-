@@ -316,7 +316,10 @@
 // });
 // console.log(` prodarray = ${prodarray}`);
 // console.dir(document.getElementById("h11"));
-console.dir(document.getElementsByClassName("wer"));
-console.dir(document.getElementsByTagName("div"));
-console.dir(document.querySelector("#heading"));
-console.dir(document.querySelector(".wer"));
+// console.dir(document.getElementsByClassName("wer"));
+// console.dir(document.getElementsByTagName("div"));
+// console.dir(document.querySelector("#heading"));
+// console.dir(document.querySelector(".wer"));
+// console.dir(document.querySelector("div").children);
+let div = document.querySelector("div");
+console.dir(div);
