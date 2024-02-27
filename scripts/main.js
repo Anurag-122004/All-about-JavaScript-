@@ -326,8 +326,25 @@
 // console.log(div.innerHTML);
 // let heading = document.querySelector("h1");
 // console.log(heading);
-let appendH = " from CU";
-let heading = document.querySelector("h2");
-let oldc = heading.innerText;
-let cHeading = oldc + appendH;
-console.log(cHeading);
+// let appendH = " from CU";
+// let heading = document.querySelector("h2");
+// let oldc = heading.innerText;
+// let cHeading = oldc + appendH;
+// console.log(cHeading);
+// let newbtn = document.createElement("button");
+// newbtn.innerText = "Click me";
+// console.log(newbtn);
+
+// let div = document.querySelector("div");
+// div.after(newbtn);
+
+// let newButton = document.createElement("button");
+// newButton.innerText = "click me";
+// newButton.style.backgroundColor="red";
+// newButton.style.color="white";
+// let bdy = document.body;
+// bdy.insertBefore(newButton, bdy.firstChild);
+// let parag = document.querySelector("p");
+// // parag.setAttribute("class","newclass"); this remove the properties applied in css also we will use classlsit
+// parag.classList.add("newClass");
+let div =  document.querySelector("div");
