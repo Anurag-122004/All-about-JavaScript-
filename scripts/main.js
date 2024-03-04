@@ -338,12 +338,12 @@
 // let div = document.querySelector("div");
 // div.after(newbtn);
 
-let newutton = document.createElement("button");
-newutton.innerText = "click me";
-newutton.style.backgroundColor="red";
-newutton.style.color="white";
+let newbtn = document.createElement("button");
+newbtn.innerText = "click me";
+newbtn.style.backgroundColor="red";
+newbtn.style.color="white";
 let bdy = document.body;
-bdy.insertBefore(newutton, bdy.firstChild);
+bdy.insertBefore(newbtn, bdy.firstChild);
 let parag = document.querySelector("p");
 // parag.setAttribute("class","newclass"); this remove the properties applied in css also we will use classlsit
 parag.classList.add("newClass");
