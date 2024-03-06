@@ -338,13 +338,27 @@
 // let div = document.querySelector("div");
 // div.after(newbtn);
 
-let newbtn = document.createElement("button");
-newbtn.innerText = "click me";
-newbtn.style.backgroundColor="red";
-newbtn.style.color="white";
-let bdy = document.body;
-bdy.insertBefore(newbtn, bdy.firstChild);
-let parag = document.querySelector("p");
-// parag.setAttribute("class","newclass"); this remove the properties applied in css also we will use classlsit
-parag.classList.add("newClass");
-let divs =  document.querySelector("div");
+// let newbtn = document.createElement("button");
+// newbtn.innerText = "click me";
+// newbtn.style.backgroundColor="red";
+// newbtn.style.color="white";
+// let bdy = document.body;
+// bdy.insertBefore(newbtn, bdy.firstChild);
+// let parag = document.querySelector("p");
+// // parag.setAttribute("class","newclass"); this remove the properties applied in css also we will use classlsit
+// parag.classList.add("newClass");
+// let divs =  document.querySelector("div");
+let btn = document.querySelector("#btn1");
+// btn.onclick = () => {
+//     console.log("Button was click");
+//     let a=25;
+//     a++;
+//     console.log(a);
+// };
+btn.onclick = (e) => {
+    console.log(e);
+};
+let div = document.querySelector("div");
+div.onmouseover = () => {
+    console.log("You were inside div");
+};
