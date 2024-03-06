@@ -4,8 +4,12 @@
 }
 
 body {
-    background-color: #fefae0;
+    background-color: #003049;
     text-align: center;
+}
+
+main h1 {
+    color: white;
 }
 
 .container {
@@ -16,6 +20,7 @@ body {
 }
 
 .game {
+    padding-left: 5vmin;
     height: 60vmin;
     width: 60vmin;
     display: flex;
@@ -28,11 +33,22 @@ body {
 .box {
     height: 18vmin;
     width: 18vmin;
-    border: 1px solid #000;
+    border: none;
     cursor: pointer;
     border-radius: 1rem;
+    font-size: 8vmin;;
 }
 
-.box:hover {
-    background-color: #dda15e;
+#reset {
+    height: 8vmin;
+    width: 12vmin;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    background-color: #fdf0d5;
+    color: #c1121f;
+    border: none;
+}
+
+.box:hover, #reset:hover {
+    background-color: #669bbc;
 }
