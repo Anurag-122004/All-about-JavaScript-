@@ -348,17 +348,57 @@
 // // parag.setAttribute("class","newclass"); this remove the properties applied in css also we will use classlsit
 // parag.classList.add("newClass");
 // let divs =  document.querySelector("div");
-let btn = document.querySelector("#btn1");
+
 // btn.onclick = () => {
 //     console.log("Button was click");
 //     let a=25;
 //     a++;
 //     console.log(a);
 // };
-btn.onclick = (e) => {
-    console.log(e);
-};
-let div = document.querySelector("div");
-div.onmouseover = () => {
-    console.log("You were inside div");
-};
+// btn.onclick = (e) => {
+//     console.log(e);
+// };
+// btn.addEventListener("click", () => {
+//     console.log(" Handler 1 ");
+// });
+
+// btn.addEventListener("click", () => {
+//     console.log(" Handler 2 ");
+// });
+
+// btn.addEventListener("click", () => {
+//     console.log(" Handler 3 ");
+// });
+
+// const handler4 = () => {
+//     console.log(" Handler 4 ");
+// };
+// btn.addEventListener("click", handler4);
+
+// btn.removeEventListener("click" , handler4);
+
+// let div = document.querySelector("div");
+// div.onmouseover = () => {
+//     console.log("You were inside div");
+// };
+// div.addEventListener("mouseover", () => {
+//     console.log("adevenlistern using inside were div");
+// });
+
+let mode = document.querySelector("#mode");
+let currMode = "light";
+
+mode.addEventListener("click", () => {
+    if ( currMode === "light" ){
+        currMode = "dark";
+        document.body.style.backgroundColor = "black";
+        // console.log("Light");
+    } else {
+        // console.log("Dark");
+        currMode = "light";
+        document.body.style.backgroundColor = "white";
+    }
+    console.log(currMode);
+});
+
+
