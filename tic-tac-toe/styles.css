@@ -9,7 +9,7 @@ body {
 }
 
 main h1 {
-    color: white;
+    color: #94d2bd;
 }
 
 .container {
@@ -36,19 +36,52 @@ main h1 {
     border: none;
     cursor: pointer;
     border-radius: 1rem;
-    font-size: 8vmin;;
+    font-size: 8vmin;
+    background-color: #ffffc7;
+    color: black;
 }
 
 #reset {
-    height: 8vmin;
-    width: 12vmin;
+    height: 7vmin;
+    width: 18vmin;
     border-radius: 0.5rem;
     font-weight: 600;
     background-color: #fdf0d5;
     color: #c1121f;
     border: none;
+    font-size: 1rem;
 }
 
 .box:hover, #reset:hover {
     background-color: #669bbc;
+}
+
+.message {
+    height: 14vmin;
+}
+
+.message p {
+    color: #94d2bd;
+    font-size: 2rem;
+}
+
+.drawGame {
+    color: #94d2bd;
+    font-size: 2rem;
+}
+
+#newGame {
+    margin-top: 1.5vmin;
+    height: 5vmin;
+    width: 18vmin;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    background-color: #fdf0d5;
+    color: #c1121f;
+    border: none;
+    font-size: 1rem;
+}
+
+.hide {
+    display: none;
 }
