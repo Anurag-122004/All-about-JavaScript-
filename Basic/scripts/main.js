@@ -18,6 +18,8 @@
 // console.log(vari2);
 // console.log(dsa);
 
+const { get } = require("http");
+
 // if ( vari1 === x){
 //     console.log("true");
 // } else {
@@ -385,20 +387,108 @@
 //     console.log("adevenlistern using inside were div");
 // });
 
-let mode = document.querySelector("#mode");
-let currMode = "light";
+// let mode = document.querySelector("#mode");
+// let currMode = "light";
 
-mode.addEventListener("click", () => {
-    if ( currMode === "light" ){
-        currMode = "dark";
-        document.body.style.backgroundColor = "black";
-        // console.log("Light");
-    } else {
-        // console.log("Dark");
-        currMode = "light";
-        document.body.style.backgroundColor = "white";
-    }
-    console.log(currMode);
-});
+// mode.addEventListener("click", () => {
+//     if ( currMode === "light" ){
+//         currMode = "dark";
+//         document.body.style.backgroundColor = "black";
+//         // console.log("Light");
+//     } else {
+//         // console.log("Dark");
+//         currMode = "light";
+//         document.body.style.backgroundColor = "white";
+//     }
+//     console.log(currMode);
+// });
+// const employee = {
+//     calcTax() {
+//         console.log(`Tax rate is 10%`);
+//     }
+// };
+
+// const karanArjun = {
+//     salary : 50000,
+// };
+// const karanArjun2 = {
+//     salary : 50000,
+// };
+// const karanArjun3 = {
+//     salary : 50000,
+// };
 
 
+// karanArjun.__proto__ = employee;
+// karanArjun2.__proto__ = employee;
+
+// class ToyotaCar {
+//     start() {
+//         console.log(`car is started`);
+//     } 
+//     stop() {
+//         console.log(`car is stopped`);
+//     }
+// }
+
+// let fortuner = new ToyotaCar();
+
+// class Parent {
+//     hello () {
+//         console.log("this is parent class..");
+//     }
+// }
+
+// class child extends Parent {
+//     hello() {
+//         console.log(`THis is child class....`);
+//     }
+// }
+
+// let obj = new child();
+// let Data = "WEbsite is loading ...loading...";
+
+// class User{
+//     constructor(name, email) {
+//         this.name = name;
+//         this.email = email;
+//     }
+
+//     viewData() {
+//         console.log(`Data is ${Data}`);
+//     }
+// }
+
+// // let student1 = new User("Anurag Kaushik", "anuragooficial.wrk@gmail.com");
+// class Admin extends User{
+//     editData() {
+//     }
+// }
+// const hello = () => {
+//     console.log(`Anurag Kaushik here..`);
+// };
+
+// setTimeout(hello, 5000);
+// function getData(dataID, getNextData) {
+//     setTimeout(() =>{
+//         console.log(`Data is ${dataID}`);
+//         if (getNextData){
+//             getNextData();
+//         }
+//     },3000);
+// };
+// //CALLBACK HELL--
+// getData(1, () =>{
+//     console.log(`Getting data 2....`);
+//     getData(2, () => {
+//         console.log(`getting Data 3.....`);
+//         getData(3, () => {
+//             console.log(`Getting Data 4.....`);
+//             getData(4);
+//         });
+//     });
+// });
+
+// let promise = new Promise((resolve, reject) => {
+//     console.log(`Promise is fullfilled...`);
+// });
