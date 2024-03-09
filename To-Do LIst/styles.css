@@ -5,7 +5,7 @@
 }
 body {
     height: 100vh;
-    background: linear-gradient(#ffd60a 50%, #003566 50%);
+    background: linear-gradient(#ffd60a 55%, #003566 45%);
 }
 .app {
     font-family: "Poppins", sans-serif;
@@ -31,4 +31,44 @@ body {
     gap: 1em;
 }
 
-#wrapper input
+#wrapper input {
+    width: 100%;
+    background-color: transparent;
+    color: #111111;
+    font-size: 0.9em;
+    border: none;
+    border-bottom: 2px solid #d1d3d4;
+    padding: 1em 0.5em;
+}
+
+#wrapper input:focus {
+    outline: none;
+    border-color: #5a95ff;
+}
+
+#wrapper button {
+    position: relative;
+    border-radius: 0.5em;
+    font-weight: 500;
+    font-size: 1em;
+    background-color: #003566;
+    border: none;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+#error {
+    text-align: center;
+    background-color: #ffffff;
+    color: orangered;
+    margin-top: 1.5em;
+    padding: 1em 0;
+    border-radius: 0.6em;
+    font-size: 1em;
+    display: none;
+}
+
+#tasks {
+    margin-top: 0.5em;
+}
