@@ -10,23 +10,19 @@ const displayCount = () => {
     countValue.innerText = taskCount;
 };
 
-
-
 const addtask = () => {
     const taskName = taskInput.value.trim();
     error.style.display = `none`;
     if (!taskName) {
-        setTimeout(
-            () => {
-                error.style.display = `block`;
-            }
-        ,200);
+        setTimeout(() => {
+            error.style.display = `block`;
+        }, 200);
         return;
     }
 
     const task = `<div class="task">
-    <input type="checkbox" class="task-check">
-    <span class="taskName" >${taskName}</span>
+    <input type="checkbox" class="task-check"/>
+    <span class="taskName">${taskName}</span>
     <button class="edit">
     <i class="fa-solid fa-pen-to-square"></i>
     </button>
@@ -38,15 +34,50 @@ const addtask = () => {
     taskContainer.insertAdjacentHTML(`beforeend`, task);
 
     const deleteButtons = document.querySelectorAll(".delete");
-    deleteButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-            button.parentNode.remove();
-            taskCount--;
+    deleteButtons.forEach((btn) => {
+        btn.onclick = () => {
+            btn.parentNode.remove();
+            taskCount -= 1;
             displayCount(taskCount);
-        });
+        };
     });
 
+    const editButton = document.querySelectorAll(`.edit`);
+    editButton.forEach((btn) => {
+        btn.onclick = (e) => {
+            let targetElement = e.target;
+            if (!(e.target.className === `edit`)) {
+                targetElement = e.target.parentElement;
+            }
+            taskInput.value = targetElement.previousElementSibling?.innerText;
+            targetElement.parentNode.remove();
+            taskCount -= 1;
+            displayCount(taskCount);
+        };
+    });
+
+    const taskCheck = document.querySelectorAll(`.task-check`);
+    taskCheck.forEach((chckbox) => {
+        chckbox.onchange = () => {
+            chckbox.nextElementSibling.classList.toggle(`Completed`);
+            if (chckbox.checked) {
+                // taskCount -= 1;
+            } else {
+                taskCount += 1;
+            }
+            displayCount(taskCount);
+        };
+    });
+
+    taskCount += 1;
+    displayCount(taskCount);
+    taskInput.value = "";
 };
 
 addButton.addEventListener(`click`, addtask);
 
+window.onload = () => {
+    taskCount = 0;
+    displayCount(taskCount);
+    taskInput.value = "";
+};
