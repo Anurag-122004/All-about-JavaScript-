@@ -44,6 +44,6 @@ button.addEventListener("click" , async (event) => {
     let respnose = await fetch(`http://${host}/latest?amount=${amountValue}&from=${fromCurr.value}&to=${toCurr.value}`);
     let data = await respnose.json();
     let rate = data.rates[toCurr.value];
-    let finalAmout = amountValue * rate;
+    let finalAmout = (amountValue * rate) / 10;
     message.innerText = `${amountValue} ${fromCurr.value} = ${finalAmout} ${toCurr.value}`;
 })
