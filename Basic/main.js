@@ -500,4 +500,6 @@ const anotherObject = {
     "model": "focus"
 };
 
-console.log(anotherObject.make);
+console.log(anotherObject["make"]);
+delete anotherObject.make;
+console.log(anotherObject);
