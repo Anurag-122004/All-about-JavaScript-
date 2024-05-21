@@ -107,9 +107,9 @@ function getData(data) {
     await getData(1);
     await getData(2);
     await getData(3);
-}) (); */
+}) (); 
 
-//FETCHING APIS-------------------------------------------------------------------
+FETCHING APIS-------------------------------------------------------------------
 const paraFact = document.querySelector("#fact");
 const getfactButton = document.querySelector("#btn");
 const URL = "https://cat-fact.herokuapp.com/facts";
@@ -122,4 +122,5 @@ const getData = async () => {
     paraFact.innerText = data[0].text;
 }
 
-btn.addEventListener("click" , getData);
+btn.addEventListener("click" , getData); */
+

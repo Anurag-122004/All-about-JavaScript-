@@ -492,3 +492,12 @@
 // let promise = new Promise((resolve, reject) => {
 //     console.log(`Promise is fullfilled...`);
 // });
+
+const sandwich = ["peanut butter", "jelly", "bread"];
+const anotherObject = {
+    make: "Ford",
+    5: "five",
+    "model": "focus"
+};
+
+console.log(anotherObject.make);

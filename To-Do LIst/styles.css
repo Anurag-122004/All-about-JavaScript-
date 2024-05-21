@@ -2,19 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 body {
     height: 100vh;
     background: linear-gradient(#ffd60a 55%, #003566 45%);
 }
+
+#heading {
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+    text-align: center;
+    font-size: 2em;
+}
+
 .app {
-    font-family: "Poppins", sans-serif;
     width: min(95vw, 31.25em);
     position: absolute;
     margin: auto;
     right: 0;
     left: 0;
-    top: 1.875em;
+    top: 5em;
 }
 
 .container {
