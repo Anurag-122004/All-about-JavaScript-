@@ -496,7 +496,7 @@
 const sandwich = ["peanut butter", "jelly", "bread"];
 const anotherObject = {
     make: "Ford",
-    5: "five",
+    5: "six",
     "model": "focus"
 };
 
