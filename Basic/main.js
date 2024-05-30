@@ -495,11 +495,11 @@
 
 const sandwich = ["peanut butter", "jelly", "bread"];
 const anotherObject = {
-    make: "Ford",
+    make: "mia",
     5: "six",
     "model": "focus"
 };
 
-console.log(anotherObject["make"]);
+console.log(anotherObject["nana"]);
 delete anotherObject.make;
 console.log(anotherObject);
